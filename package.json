@@ -1,0 +1,54 @@
+{
+  "name": "pino-appinsights-transport",
+  "description": "Application Insights transport for pino.",
+  "version": "0.1.0",
+  "author": "Chris Meagher",
+  "homepage": "https://github.com/CMeeg/pino-appinsights-transport#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CMeeg/pino-appinsights-transport"
+  },
+  "bugs": {
+    "url": "https://github.com/CMeeg/pino-appinsights-transport/issues"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "require": {
+      "types": "./dist/index.d.cts",
+      "default": "./dist/index.cjs"
+    },
+    "import": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "pkgroll"
+  },
+  "dependencies": {
+    "applicationinsights": "^3.0.0-beta.9",
+    "pino-abstract-transport": "^1.1.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^5.0.0",
+    "pkgroll": "^1.11.1",
+    "typescript": "5.2.2"
+  },
+  "peerDependencies": {
+    "applicationinsights": "^3.0.0-beta.9",
+    "pino": "^7.0.0 || ^8.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
