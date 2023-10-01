@@ -1,7 +1,7 @@
 {
   "name": "pino-appinsights-transport",
   "description": "Application Insights transport for pino.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Chris Meagher",
   "homepage": "https://github.com/CMeeg/pino-appinsights-transport#readme",
   "repository": {
@@ -13,7 +13,7 @@
   },
   "license": "MIT",
   "type": "module",
-  "main": "./dist/index.js",
+  "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
@@ -48,6 +48,13 @@
     "applicationinsights": "^3.0.0-beta.9",
     "pino": "^7.0.0 || ^8.0.0"
   },
+  "files": [
+    "dist/",
+    "src/",
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ],
   "publishConfig": {
     "access": "public"
   }
