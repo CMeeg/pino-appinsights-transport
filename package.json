@@ -1,7 +1,7 @@
 {
   "name": "pino-appinsights-transport",
   "description": "Application Insights transport for pino.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Chris Meagher",
   "homepage": "https://github.com/CMeeg/pino-appinsights-transport#readme",
   "repository": {

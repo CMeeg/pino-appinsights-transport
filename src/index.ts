@@ -3,7 +3,8 @@ import type { ExceptionTelemetry, TraceTelemetry } from 'applicationinsights'
 import build from 'pino-abstract-transport'
 
 function pinoLevelToSeverityLevel(level: number): KnownSeverityLevel {
-  if (level === 60) {
+  // https://github.com/pinojs/pino/blob/master/docs/api.md#logger-level
+  if (level >= 60) {
     return KnownSeverityLevel.Critical
   }
 
@@ -15,7 +16,7 @@ function pinoLevelToSeverityLevel(level: number): KnownSeverityLevel {
     return KnownSeverityLevel.Warning
   }
 
-  if (level >= 20) {
+  if (level >= 30) {
     return KnownSeverityLevel.Information
   }
 
